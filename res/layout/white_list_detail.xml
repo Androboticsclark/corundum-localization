@@ -1,0 +1,138 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<!-- 導入処理 -->
+	<TextView
+		android:id="@+id/menu_textView1"
+		android:text="@string/white_list_detail_textView1"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		style="@style/Corundum_TextView_MenuBar_WhiteList" />
+
+	<ScrollView
+		android:id="@+id/main_setting_ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#FFFFFF"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="15.0dp" >
+
+			<!-- URLを入力してください -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout_WhiteList" >
+
+				<TextView
+					android:id="@+id/white_list_detail_textView2"
+					android:text="@string/white_list_detail_textView2"
+					style="@style/Corundum_TextView_Label" />
+			</LinearLayout>
+
+			<!-- URLエディットボックス -->
+			<LinearLayout
+				android:gravity="center"
+				style="@style/Corundum_LinearLayout_WhiteList" >
+
+				<EditText
+					android:id="@+id/white_list_detail_editText1"
+					android:layout_width="0dip"
+					android:layout_weight="10"
+					style="@style/Corundum_EditText_url" />
+			</LinearLayout>
+
+			<!-- ラジオボタン -->
+			<RadioGroup
+				android:id="@+id/white_list_detail_radioGroup1"
+				style="@style/Corundum_RadioGroup_WhiteList" >
+
+				<!-- URL完全一致 -->
+				<RadioButton
+					android:id="@+id/white_list_detail_radio0"
+					android:text="@string/white_list_detail_radio0"
+					style="@style/Corundum_RadioButton" />
+
+				<!-- URL以下全て -->
+				<RadioButton
+					android:id="@+id/white_list_detail_radio1"
+					android:text="@string/white_list_detail_radio1"
+					style="@style/Corundum_RadioButton" />
+			</RadioGroup>
+
+
+			<!-- ページタイトル -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout_WhiteList" >
+
+				<TextView
+					android:id="@+id/white_list_detail_textView3"
+					android:text="@string/white_list_detail_textView3"
+					style="@style/Corundum_TextView_Label" />
+			</LinearLayout>
+
+			<!-- ページタイトルエディットボックス -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout_WhiteList" >
+
+				<EditText
+					android:id="@+id/white_list_detail_editText2"
+					style="@style/Corundum_EditText_appname" />
+			</LinearLayout>
+
+			<!-- プレビュー -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout_WhiteList" >
+
+				<TextView
+					android:id="@+id/white_list_detail_textView4"
+					android:text="@string/white_list_detail_textView4"
+					style="@style/Corundum_TextView_Label" />
+
+				<!-- プログレス -->
+				<LinearLayout
+					android:layout_width="0dp"
+					android:layout_weight="1"
+					style="@style/Corundum_LinearLayout_Progress_Small" >
+
+					<ProgressBar
+						android:id="@+id/white_list_detail_progressBar1"
+						style="@style/Corundum_ProgressBar_Small" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<!-- WEB表示 -->
+			<LinearLayout
+				android:gravity="center"
+				style="@style/Corundum_LinearLayout_WhiteList" >
+
+				<WebView
+					android:id="@+id/white_list_detail_webView1"
+					android:layout_width="match_parent"
+					android:layout_height="300dp" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:gravity="center"
+				style="@style/Corundum_LinearLayout_menu_bottom_WhiteList" >
+
+				<!-- 設定 -->
+				<Button
+					android:id="@+id/white_list_detail_Button1"
+					android:text="@string/white_list_detail_Button1"
+					style="@style/Corundum_Button_Small" />
+
+				<!-- キャンセル -->
+				<Button
+					android:id="@+id/white_list_detail_Button2"
+					android:text="@string/white_list_detail_Button2"
+					style="@style/Corundum_Button_Small" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

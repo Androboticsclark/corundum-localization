@@ -1,0 +1,251 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- メニューボタン -->
+		<Button
+			android:id="@+id/main_setting_button1"
+			android:text="@string/menu_textView1"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- 導入処理 -->
+		<TextView
+			android:id="@+id/menu_textView1"
+			android:text="@string/menu_button5"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/main_setting_textView13"
+			android:text="@string/menu_textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/main_setting_ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#D2D8E1"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20.0dp" >
+
+				<!-- ホーム画面の設定 -->
+				<TextView
+					android:id="@+id/main_setting_textView1"
+					android:text="@string/main_setting_textView1"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- ラジオボタン -->
+				<RadioGroup
+					android:id="@+id/main_setting_radioGroup1"
+					style="@style/Corundum_RadioGroup" >
+
+					<!-- アプリリスト -->
+					<RadioButton
+						android:id="@+id/main_setting_radio0"
+						android:text="@string/main_setting_radio0"
+						style="@style/Corundum_RadioButton" />
+
+					<!-- アプリを指定 -->
+					<RadioButton
+						android:id="@+id/main_setting_radio1_app"
+						android:text="@string/main_setting_radio1_app"
+						style="@style/Corundum_RadioButton" />
+
+					<!-- URLを指定 -->
+					<RadioButton
+						android:id="@+id/main_setting_radio1"
+						android:text="@string/main_setting_radio1"
+						style="@style/Corundum_RadioButton" />
+
+					<!-- URLエディットボックス -->
+					<LinearLayout
+						android:gravity="center"
+						style="@style/Corundum_LinearLayout" >
+
+						<EditText
+							android:id="@+id/main_setting_editText1"
+							android:layout_width="0dip"
+							android:layout_weight="10"
+							style="@style/Corundum_EditText_url" />
+					</LinearLayout>
+				</RadioGroup>
+
+				<!-- プレビュー -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout" >
+
+					<TextView
+						android:id="@+id/main_setting_textView2"
+						android:text="@string/main_setting_textView2"
+						style="@style/Corundum_TextView_Label" />
+
+					<!-- プログレス -->
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_weight="1"
+						style="@style/Corundum_LinearLayout_Progress_Small" >
+
+						<ProgressBar
+							android:id="@+id/main_setting_progressBar1"
+							style="@style/Corundum_ProgressBar_Small" />
+					</LinearLayout>
+				</LinearLayout>
+
+				<!-- WEB表示 -->
+				<LinearLayout
+					android:gravity="center"
+					style="@style/Corundum_LinearLayout_menu_bottom" >
+
+					<WebView
+						android:id="@+id/main_setting_webView1"
+						android:layout_width="match_parent"
+						android:layout_height="400dp" />
+				</LinearLayout>
+
+				<!-- コランダム起動時に表示される -->
+				<TextView
+					android:id="@+id/main_setting_textView3"
+					android:text="@string/main_setting_textView3"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- ホーム画面を選択してください -->
+				<TextView
+					android:id="@+id/main_setting_textView4"
+					android:text="@string/main_setting_textView4"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20.0dp" >
+
+				<!-- 起動時表示モードの設定 -->
+				<TextView
+					android:id="@+id/main_setting_textView5"
+					android:text="@string/main_setting_textView5"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- ラジオボタン -->
+				<RadioGroup
+					android:id="@+id/main_setting_radioGroup2"
+					style="@style/Corundum_RadioGroup" >
+
+					<!-- オペレーションモード -->
+					<RadioButton
+						android:id="@+id/main_setting_radio2"
+						android:text="@string/main_setting_radio2"
+						style="@style/Corundum_RadioButton" />
+
+					<!-- フルスクリーンモード -->
+					<RadioButton
+						android:id="@+id/main_setting_radio3"
+						android:text="@string/main_setting_radio3"
+						style="@style/Corundum_RadioButton" />
+				</RadioGroup>
+
+				<!-- ステータスバーを非表示 -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu_bottom" >
+
+					<TextView
+						android:id="@+id/main_setting_textView6"
+						android:text="@string/main_setting_textView6"
+						android:layout_weight="6"
+						android:layout_width="0dip"
+						style="@style/Corundum_TextView_Label" />
+
+					<CheckBox
+						android:id="@+id/main_setting_checkBox1"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						style="@style/Corundum_CheckBox" />
+				</LinearLayout>
+
+				<!-- コランダム初期起動時の -->
+				<TextView
+					android:id="@+id/main_setting_textView7"
+					android:text="@string/main_setting_textView7"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- 起動モードを設定してください -->
+				<TextView
+					android:id="@+id/main_setting_textView8"
+					android:text="@string/main_setting_textView8"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20.0dp" >
+
+				<!-- ホワイトリストの使用 -->
+				<TextView
+					android:id="@+id/main_setting_textView9"
+					android:text="@string/main_setting_textView9"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- ホワイトリストを使用する -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu" >
+
+					<TextView
+						android:id="@+id/main_setting_textView10"
+						android:text="@string/main_setting_textView10"
+						android:layout_weight="6"
+						android:layout_width="0dip"
+						style="@style/Corundum_TextView_Label" />
+
+					<CheckBox
+						android:id="@+id/main_setting_checkBox2"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						style="@style/Corundum_CheckBox" />
+				</LinearLayout>
+
+				<!-- ホワイトリストは、メニューから -->
+				<TextView
+					android:id="@+id/main_setting_textView11"
+					android:text="@string/main_setting_textView11"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- ホワイトリスト設定を選択してください -->
+				<TextView
+					android:id="@+id/main_setting_textView12"
+					android:text="@string/main_setting_textView12"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

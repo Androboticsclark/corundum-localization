@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+    <LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+	    <!-- オプションメニューボタン -->
+		<Button
+			android:id="@+id/application_shop_Button1"
+			android:text="@string/application_shop_Button1"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- コランダムアプリショップ -->
+		<TextView
+			android:id="@+id/application_shop_textView1"
+			android:text="@string/application_shop_textView1"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/application_shop_textView2"
+			android:text="@string/application_shop_Button1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+
+	</LinearLayout>
+
+	<!-- WEB表示 -->
+	<WebView
+		android:id="@+id/application_shop_webView1"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="0.41" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.1, maximum-scale=0.5, user-scalable=yes">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="utf.js" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				corundum = new Corundum();
+				startCorundum();
+			};
+
+			function memo(){
+				var nsVal = {
+					"value":document.getElementById("memoString").value,	//Message
+					"time":1												//Seconds
+				};
+
+				document.location = encodeURI("corundum-api://localNotice(" + JSON.stringify(nsVal) + ")");
+			};
+
+			function Corundum() {
+				this.motionShaked = function(value){
+					// 何もしない。
+				};
+			};
+
+		</script>
+	</head>
+	<body>
+		<table align="center">
+			<tr align=center>
+				<td>
+					<input type="text" maxlength="20" size="40" style="font-size: 20px;" id="memoString">
+				</td>
+			</tr>
+			
+			<tr align=center>
+				<td>
+					<input type="button" value="メモ記録" name="myFormButton" onclick="memo()">
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
+

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.corundumPro"
+	android:versionCode="3"
+	android:versionName="1.1.1" android:installLocation="auto">
+
+	<uses-sdk
+		android:minSdkVersion="10"
+		android:targetSdkVersion="17" />
+
+	<!-- SDアクセス許可 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+	<!-- インターネットアクセス許可 -->
+	<uses-permission android:name="android.permission.INTERNET"/>
+
+	<!-- ショートカット作成許可 -->
+	<uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+	<!-- GPS許可 -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+	<uses-permission android:name="android.permission.ACCESS_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_ASSISTED_GPS" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION" />
+	<supports-screens android:resizeable="true" android:normalScreens="true" android:xlargeScreens="true" android:anyDensity="true" android:largeScreens="true" android:smallScreens="true"/>
+
+	<!-- 電話帳許可 -->
+	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+	<!-- アプリ内課金 -->
+	<uses-permission android:name="com.android.vending.BILLING"/>
+
+	<application
+		android:allowBackup="true"
+		android:icon="@drawable/ic_launcher"
+		android:label="@string/app_name"
+		android:theme="@android:style/Theme.NoTitleBar" >
+
+		<activity
+			android:name="com.corundumPro.features.splash.SplashActivity"
+			android:label="@string/app_name" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.corundumPro.features.home.HomeActivity"
+			android:label="@string/app_name"
+			android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize"
+			android:launchMode="singleTask" />
+
+		<activity android:name="com.corundumPro.features.actionsheet.ActionSheetActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize"
+		    android:theme="@android:style/Theme.Translucent" />
+		<activity android:name="com.corundumPro.features.menu.MenuActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.introduction.IntroductionActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.setting.MainSettingActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.setting.SubSettingActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.screensaver.ScreenSaverActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.whitelist.WhiteListActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.whitelist.WhiteListDetailActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.shortcut.ShortcutActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.editor.FileListActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.editor.FileListDetailActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.common.activity.BaseActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.home.HomeWebView" />
+		<activity android:name="com.corundumPro.features.appsmanager.ApplicationListActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize"
+		    android:launchMode="singleTask" />
+		<activity android:name="com.corundumPro.features.appsmanager.ApplicationShopActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.editor.EditorPreviewActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+		<activity android:name="com.corundumPro.features.editor.ImagePreviewActivity"
+		    android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize" />
+
+		<receiver android:name="com.corundumPro.features.screensaver.ScreenSaverReceivedActivity" android:process=":remote" />
+
+		<uses-library android:name="com.google.android.maps" />
+	</application>
+</manifest>

@@ -1,0 +1,144 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- メニューボタン -->
+		<Button
+			android:id="@+id/shortcut_button3"
+			android:text="@string/menu_textView1"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- 起動アイコン設定 -->
+		<TextView
+			android:id="@+id/menu_textView1"
+			android:text="@string/menu_button8"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/shortcut_textView6"
+			android:text="@string/menu_textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/shortcut_ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#D2D8E1"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="15.0dp" >
+
+			<!-- アイコン情報設定 -->
+			<TextView
+				android:id="@+id/shortcut_textView1"
+				android:text="@string/shortcut_textView1"
+				style="@style/Corundum_TextView_Title" />
+
+			<!-- 名称 -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout_menu_top" >
+
+				<TextView
+					android:id="@+id/shortcut_textView2"
+					android:text="@string/shortcut_textView2"
+					style="@style/Corundum_TextView_Label" />
+
+				<!-- アプリ名エディットボックス -->
+				<EditText
+					android:id="@+id/shortcut_editText1"
+					android:hint="@string/shortcut_editText1_hint"
+					style="@style/Corundum_EditText_appname" />
+			</LinearLayout>
+
+			<!-- アイコン設定 -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout" >
+
+				<Button
+					android:id="@+id/shortcut_button1"
+					android:text="@string/shortcut_button1"
+					style="@style/Corundum_Button_Small" />
+
+				<!-- アイコン画像 -->
+				<LinearLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:paddingTop="10.0dp"
+					android:paddingBottom="10.0dp"
+					android:paddingLeft="15.0dp"
+					android:paddingRight="15.0dp" >
+
+					<ImageView
+						android:id="@+id/shortcut_imageView1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:contentDescription="@string/shortcut_imageView1_desc" />
+				</LinearLayout>
+			</LinearLayout>
+
+			<!-- URL -->
+			<LinearLayout
+				style="@style/Corundum_LinearLayout" >
+
+				<TextView
+					android:id="@+id/shortcut_textView3"
+					android:text="@string/shortcut_textView3"
+					style="@style/Corundum_TextView_Label" />
+
+				<!-- URLエディットボックス -->
+				 <EditText
+					android:id="@+id/shortcut_editText2"
+					android:hint="@string/shortcut_editText2_hint"
+					android:layout_width="match_parent"
+					style="@style/Corundum_EditText_url" />
+			</LinearLayout>
+
+			<!-- 起動アイコン作成 -->
+			<LinearLayout
+				android:gravity="center"
+				style="@style/Corundum_LinearLayout_menu_bottom" >
+
+				<Button
+					android:id="@+id/shortcut_button2"
+					android:text="@string/shortcut_button2"
+					style="@style/Corundum_Button_Small" />
+			</LinearLayout>
+
+			<!-- 起動アイコン用の名前と画像 -->
+			<TextView
+				android:id="@+id/shortcut_textView4"
+				android:text="@string/shortcut_textView4"
+				style="@style/Corundum_TextView_Description" />
+
+			<!-- URLを設定してください -->
+			<TextView
+				android:id="@+id/shortcut_textView5"
+				android:text="@string/shortcut_textView5"
+				style="@style/Corundum_TextView_Description" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

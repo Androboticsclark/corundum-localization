@@ -1,0 +1,29 @@
+<LinearLayout
+	 xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/Corundum_LinearLayout_whitelist" >
+
+	<!-- ホワイトリストタイトル -->
+	<TextView
+		android:id="@+id/white_list_row_TextView1"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="20sp"
+		android:textColor="#000000"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="0dp"
+		android:paddingBottom="0dp"/>
+
+	<!-- ホワイトリストURL -->
+	<TextView
+		android:id="@+id/white_list_row_TextView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="15sp"
+		android:textColor="#666666"
+		android:paddingLeft="10dp"
+		android:paddingRight="10dp"
+		android:paddingTop="2dp"
+		android:paddingBottom="0dp"/>
+</LinearLayout>

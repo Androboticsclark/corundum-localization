@@ -1,0 +1,63 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#FFFFFF" >
+
+    <LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- メニューボタン -->
+		<Button
+			android:id="@+id/white_list_Button2"
+			android:text="@string/menu_textView1"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/white_list_textView1"
+			android:text="@string/white_list_Button1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+
+		<!-- ホワイトリスト -->
+		<TextView
+			android:id="@+id/menu_textView1"
+			android:text="@string/menu_button7"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/white_list_textView2"
+			android:text="@string/menu_textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+
+		<Button
+			android:id="@+id/white_list_Button1"
+			android:text="@string/white_list_Button1"
+			style="@style/Corundum_Button_topbar" />
+	</LinearLayout>
+
+	<ListView
+		android:layout_height="0dip"
+		android:id="@+id/white_list_ListView1"
+		android:layout_width="match_parent"
+		android:layout_weight="1" />
+</LinearLayout>

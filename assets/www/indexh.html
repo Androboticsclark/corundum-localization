@@ -1,0 +1,132 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" charset="utf-8" />
+<link href="index.css" rel="stylesheet" type="text/css">
+<title>Corundum Home</title>
+<script type="text/javascript" src="index.js" charset="utf-8"></script>
+<script type="text/javascript" src="utf.js" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+window.onload = function(){
+    corundum = new Corundum();
+    startCorundum();
+};
+</script>
+</head>
+
+<body>
+<img src="titlephoto.png" width="960" align="middle">
+
+<h1><center>カスタムブラウザ コランダムホーム</center></h1><p>
+<h3>
+<li /><a href="indexm.html">コランダムホーム</a>　Android用(JQueryMobile版)コランダムホームを表示します<p>
+<li /><a href="http://www.google.co.jp">Google Japan</a>　世界一の検索エンジン、ご存知グーグルです<p>
+<li /><a href="http://www.yahoo.co.jp">Yahoo Japan</a>　ポータルサイトと言えば日本では、これ<p>
+<li /><a href="http://www.vasdaq.tv/category/ch0038/index.html?1291283535">VASDAQ.TV ワールドニュース</a>　フルスクリーンモード（横画面）でご覧ください<p>
+<li /><a href="http://www.vasdaq.tv/yaml_db_forms/input/100004">VASDAQ.TV アンケートフォーム</a>　オペレーションモードでご覧ください<p>
+</h3><p>
+<h5>
+    カスタムブラウザ「コランダム」は、ブラウザ側の簡単な設定だけで、あなたのWebサイトを、Androidアプリや、業務専用システムにする事が出来るブラウザです<br>
+    フルスクリーンモード　で、お店やショールームの電子看板にしたり、オペレーションモード　で、あなただけの専用アプリを作れます。<br>
+    詳細は、<a href="preview.pdf">コランダムとは？(PDF)</a>をご覧ください<p>
+</h5><p><br>
+
+
+<h1><center>ローカルアクセス機能サンプル</center></h1><p>
+<img id="myImage" />
+<h4>
+    <form>
+        <input type="button" id="btn1" value="イメージピッカー起動" style="font-size:20px; width:240px; height:30px;font-weight:bold;" />
+        <input type="radio" name="isel" value="camera" checked  style="width:24px; height:24px" >カメラ起動
+        <input type="radio" name="isel" value="photoLibrary"  style="width:24px; height:24px" >写真選択
+        <input type="radio" name="isel" value="photoAlbum"  style="width:24px; height:24px" >アルバムから直接選択</input><br>
+        イメージピッカーを起動します。HTML5とは違い自動実行、編集が可能です<p>
+        <hr>
+        <input type="checkbox" id="btn2" value="シェイクイベント取得" style="width:24px; height:24px" >シェイクイベント取得</input><br>
+        シェイクイベントを取得します。チェックボタンを押しAndroid端末を振ってください<p>
+
+        <hr>
+        <input type="button" id="btn3" value="URLスキーム" style="font-size:20px; width:170px; height:30px;font-weight:bold;" />
+        <input type="text" id="txt1"  value="geo:35.710139,139.810833"  style="font-size:20px; width:300px; height:32px;" /><br>
+        URLスキームを使用して、Android端末内のアプリを自動起動します<p>
+
+        <hr>
+        <input type="button" id="btn4" value="ローカル通知" style="font-size:20px; width:170px; height:30px;font-weight:bold;" />
+        <input type="text" id="txt2" size=4 value="10"  style="font-size:20px; width:60px; height:32px;" />
+        <input type="text" id="txt3" size=50 value="This is the message"  style="font-size:20px; width:350px; height:32px;" /><br>
+        n秒後に、任意のメッセージでローカル通知を実行します<p>
+
+        <hr>
+        <input type="checkbox" id="btn5" value="自動スリープ設定" style="width:24px; height:24px" >自動スリープ禁止</input><br>
+        Android端末の自動スリープを抑止します。スリープしては困る場合に使用してください<p>
+        <hr>
+        <input type="button" id="btn6" value="アドレス取得" style="font-size:20px; width:170px; height:30px;font-weight: bold;" /><br>
+        アドレス帳データを取得します<p>
+        <hr>
+        <input type="button" id="btn7" value="オペレーションモード" style="font-size:20px; width:170px; height:30px;font-weight: bold;" /><br>
+        オペレーションモードに変更します<p>
+        <hr>
+        <input type="button" id="btn8" value="フルスクリーンモード" style="font-size:20px; width:170px; height:30px;font-weight: bold;" /><br>
+        フルスクリーンモードに変更します<p>
+        <hr>
+    </form>
+</h4><p>
+<h5>
+「コランダム」は、あらかじめホワイトリスト（アクセス可能なURL）を設定しておく事で、スマートフォンやタブレットのローカル資源に直接アクセス出来ます。HTML5では不可能な、カメラの自動起動や、シェイクイベントの取得、ローカル通知など、様々な機能に、Web上のJavaScriptからアクセスが可能になります。（ホワイトリストを設定しないで悪意のあるサイトにアクセスするのは大変危険です。ご注意ください）
+</h5><p><br>
+
+
+<h1><center>Web画面の終了とカスタマイズ</center></h1><p>
+<h4>
+この画面を終了するには、<img src="action.png" width="36" height="36" align="middle">
+「アクションメニュー」をクリックするか、二本指で画面を軽くタップする事で、下記メニューを表示し、「環境設定メニューへ」を選択してください<br>
+<table border=4>
+ <caption>【オプションメニュー説明】</caption>
+ <tr bgcolor="black">
+  <th>オプションメニュー</th>
+  <th>メニュー</th>
+  <th>説明</th>
+ <tr align=center>
+  <td rowspan=7><img src="option_menu.png" width="160" height="180" align="middle"></td>
+ </tr>
+ <tr align=center>
+  <td>ツールバー表示/非表示</td>
+  <td>ホーム、戻る、進む、再読み込み、読み込み中止等のツールバーを表示します</td>
+ </tr>
+ <tr align=center>
+  <td>WEBブラウザを起動</td>
+  <td>現在表示しているURLで、WEBブラウザを起動します（コランダムホームは、セキュリティ上表示出来ません）</td>
+ </tr>
+ <tr align=center>
+  <td>このアプリを強制終了</td>
+  <td>カスタムブラウザ コランダムを強制終了します</td>
+ </tr>
+ <tr align=center>
+  <td>環境設定メニューへ</td>
+  <td>コランダムメニュー画面へ移動します。各種環境設定はこちらからどうぞ</td>
+ </tr>
+ <tr align=center>
+  <td>キャンセル</td>
+  <td>オプションメニューを何も実行したくない時はキャンセルボタンで元の画面に戻ります</td>
+ </tr>
+</table>
+<p>
+</h4>
+<h5>
+この、コランダムホームは、「メニュー」→「コランダムホーム編集」で、HTML、CSS、JavaScriptを使い、自由にカスタマイズが可能です。<br>
+あなただけのオリジナルメニューや、業務メニュー、アプリ専用の起動画面もアイディア次第で、Android上に作成出来ます。<p>
+他にも、「コランダム」では、ホームボタンによる終了抑制や、スクリーンセーバー機能、起動アイコン作成など、様々なWebアプリ開発メニューがあります。
+</h5><p>
+
+<h6>
+Write Web, Run Corundum<br>
+カスタムブラウザ「コランダム」は、Kouichi Nagataが提唱・初期開発(iOS向け)を行った完全無料のアプリケーションです。<br>
+現在は、アンドロボティクス株式会社(ANDROBOTICS.LTD)が著作権を所有し、開発(iOS版、Android版)を行っています。<br>
+Copyright (C) 2013- Androbotics All Rights Reserved.
+</h6>
+
+<h2>
+<Div Align="center"><a href="http://www.androbo.jp/"><img src="androbo.png" align="middle"></a></Div>
+</h2>
+</body>
+</html>

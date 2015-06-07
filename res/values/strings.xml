@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">CorundumPro</string>
+
+	<!-- User Agent -->
+	<string name="user_agent">CorundumPro/1.0.0</string>
+
+	<!-- 利用許諾 -->
+	<string name="confirm">利用許諾</string>
+	<string name="eula">hogehoge</string>
+	<string name="eula_ok">承諾</string>
+	<string name="eula_ng">拒否</string>
+
+	<!-- splash.xml -->
+	<string name="splash_imageView1_desc">起動画像</string>
+
+	<!-- home.xml -->
+	<string name="home_imageButton1_desc">リロードボタン</string>
+	<string name="home_imageButton2_desc">ホームボタン</string>
+	<string name="home_imageButton3_desc">Prevボタン</string>
+	<string name="home_imageButton4_desc">Nextボタン</string>
+	<string name="home_imageButton5_desc">リロードボタン</string>
+	<string name="home_imageButton6_desc">キャンセルボタン</string>
+	<string name="home_imageButton7_desc">メニューボタン</string>
+
+	<!-- ダウンロードマネージャー -->
+	<string name="downloading">ダウンロード中..</string>
+	<string name="download_cancel">キャンセル</string>
+
+	<!-- action_sheet.xml -->
+	<string name="action_sheet_button1">ツールバー表示/非表示</string>
+	<string name="action_sheet_button2">WEBブラウザ起動</string>
+	<string name="action_sheet_button3">このアプリを強制終了</string>
+	<string name="action_sheet_button4">環境設定メニューへ</string>
+	<string name="action_sheet_button5">キャンセル</string>
+
+	<!-- menu.xml -->
+	<string name="menu_button1">コランダムとは？(PDF)</string>
+	<string name="menu_button2">管理者用モード</string>
+	<string name="menu_button3">オペレーションモード</string>
+	<string name="menu_button4">フルスクリーンモード</string>
+	<string name="menu_button5">導入処理</string>
+	<string name="menu_button6">その他導入処理</string>
+	<string name="menu_button7">ホワイトリスト設定</string>
+	<string name="menu_button8">起動アイコン設定</string>
+	<string name="menu_button9">コランダムエディタ</string>
+	<string name="menu_button10">Top</string>
+	<string name="menu_textView1">メニュー</string>
+	<string name="menu_textView2">最初にお読みください</string>
+	<string name="menu_textView3">Web表示</string>
+	<string name="menu_textView4">対象となる表示モードで、</string>
+	<string name="menu_textView5">Webの表示確認をして下さい</string>
+	<string name="menu_textView6">環境設定</string>
+	<string name="menu_textView7">Webを表示する前に</string>
+	<string name="menu_textView8">各種環境設定を実施してください</string>
+
+	<!-- main_setting.xml -->
+	<string name="main_setting_textView1">ホーム画面の設定</string>
+	<string name="main_setting_radio0">アプリリスト</string>
+	<string name="main_setting_radio1">URLを指定</string>
+	<string name="main_setting_radio1_app">アプリを指定</string>
+	<string name="main_setting_editText1_hint">http://</string>
+	<string name="main_setting_editText1_app_hint">file://</string>
+	<string name="main_setting_textView2">プレビュー</string>
+	<string name="main_setting_textView3">コランダム起動時に表示される</string>
+	<string name="main_setting_textView4">ホーム画面を選択してください</string>
+	<string name="main_setting_textView5">起動時表示モードの設定</string>
+	<string name="main_setting_radio2">オペレーションモード</string>
+	<string name="main_setting_radio3">フルスクリーンモード</string>
+	<string name="main_setting_textView6">ステータスバーを非表示</string>
+	<string name="main_setting_textView7">コランダム初期起動時の</string>
+	<string name="main_setting_textView8">起動モードを設定してください</string>
+	<string name="main_setting_textView9">ホワイトリストの使用</string>
+	<string name="main_setting_textView10">ホワイトリストを使用する</string>
+	<string name="main_setting_textView11">ホワイトリストは、メニューから</string>
+	<string name="main_setting_textView12">ホワイトリスト設定を選択してください</string>
+
+	<!-- sub_setting.xml -->
+	<string name="sub_setting_textView1">スクリーンセーバーの設定</string>
+	<string name="sub_setting_textView2">スクリーンセーバーを使用</string>
+	<string name="sub_setting_textView3">秒後に起動する</string>
+	<string name="sub_setting_editText2_hint">URLを入力</string>
+	<string name="sub_setting_textView4">プレビュー表示確認</string>
+	<string name="sub_setting_button1">プレビュー</string>
+	<string name="sub_setting_textView5">スクリーンセーバーとして使用する</string>
+	<string name="sub_setting_textView6">URLを設定してください</string>
+	<string name="sub_setting_textView7">パスコードの設定</string>
+	<string name="sub_setting_textView8">パスコードを使用する</string>
+	<string name="sub_setting_textView9">パスコードの設定変更</string>
+	<string name="sub_setting_button2">コード入力</string>
+	<string name="sub_setting_textView10">パスコードを設定してください</string>
+	<string name="sub_setting_textView11">初期状態のパスコードは0000です</string>
+	<string name="sub_setting_textView12">管理者モードはパスコード使用しません</string>
+	<string name="sub_setting_textView13">ホームボタン終了抑制</string>
+	<string name="sub_setting_textView14">終了時に通知する</string>
+	<string name="sub_setting_textView15">ホームボタンで終了した時に</string>
+	<string name="sub_setting_textView16">終了確認のメッセージを表示します</string>
+
+	<!-- white_list.xml -->
+	<string name="white_list_Button1">+</string>
+
+	<!-- white_list_detail.xml -->
+	<string name="white_list_detail_textView1">ホワイトリスト入力画面</string>
+	<string name="white_list_detail_textView2">URLを入力してください</string>
+	<string name="white_list_detail_radio0">URL完全一致</string>
+	<string name="white_list_detail_radio1">URL以下全て</string>
+	<string name="white_list_detail_textView3">ページタイトル</string>
+	<string name="white_list_detail_textView4">プレビュー</string>
+	<string name="white_list_detail_Button1">設定</string>
+	<string name="white_list_detail_Button2">キャンセル</string>
+	<string name="white_list_detail_title">ホワイトリスト詳細設定</string>
+
+	<!-- White List Dialog -->
+	<string name="white_list_edit">編集</string>
+	<string name="white_list_delete">削除</string>
+	<string name="white_list_delete_ok">削除してもよろしいですか？</string>
+	<string name="white_list_ok">実行</string>
+	<string name="white_list_cancel">キャンセル</string>
+
+	<!-- shortcut.xml -->
+	<string name="shortcut_textView1">アイコン情報設定</string>
+	<string name="shortcut_editText1_hint">アプリ名を入力</string>
+	<string name="shortcut_textView2">名称</string>
+	<string name="shortcut_imageView1_desc">画像を選択してください</string>
+	<string name="shortcut_button1">アイコン設定</string>
+	<string name="shortcut_textView3">URL</string>
+	<string name="shortcut_editText2_hint">URLを入力</string>
+	<string name="shortcut_textView4">起動アイコン用の名前と画像</string>
+	<string name="shortcut_textView5">URLを設定してください</string>
+	<string name="shortcut_textView6">アイコン作成</string>
+	<string name="shortcut_button2">起動アイコン作成</string>
+
+	<!-- file_list.xml -->
+	<string name="file_list_Button1">+</string>
+	<string name="file_list_Button2">戻る</string>
+
+	<!-- file_list_detail.xml -->
+	<string name="file_list_detail_textView1">ファイル編集</string>
+	<string name="file_list_detail_Button1">保存</string>
+	<string name="file_list_detail_Button2">キャンセル</string>
+	<string name="file_list_detail_Button3">プレビュー</string>
+
+	<!-- application_list.xml -->
+	<string name="application_list_Button1">ダウンロード</string>
+	<string name="application_list_Button2">メニュー</string>
+	<string name="application_list_Button3">アプリ実行</string>
+	<string name="application_list_Button4">アップロード</string>
+	<string name="application_list_Button5">削除</string>
+
+	<!-- application_shop.xml -->
+	<string name="application_shop_Button1">戻る</string>
+	<string name="application_shop_textView1">アプリショップ</string>
+
+	<!-- Home Edit Dialog -->
+	<string name="file_list_move">移動</string>
+	<string name="file_list_edit">編集</string>
+	<string name="file_list_delete">削除</string>
+	<string name="file_list_rename">リネーム</string>
+	<string name="file_list_delete_ok">削除してもよろしいですか？</string>
+	<string name="file_list_ok">実行</string>
+	<string name="file_list_cancel">キャンセル</string>
+	<string name="file_list_imageView1_desc">画像を選択してください</string>
+	<string name="file_list_move_up">上のフォルダへ</string>
+
+	<!-- Pass Code Dialog -->
+	<string name="passcode_hint">Enter Your Pass Code!</string>
+	<string name="passcode_ok">実行</string>
+	<string name="passcode_cancel">キャンセル</string>
+	<string name="passcode_input_passcode">パスコードを入力</string>
+	<string name="passcode_input_now_passcode">現在のパスコードを入力</string>
+	<string name="passcode_input_new_passcode">新しいパスコードを入力</string>
+	<string name="passcode_input_new_passcode_again">もう一度パスコードを入力</string>
+
+	<!-- Rename Dialog -->
+	<string name="reneme_hint">Enter New File Name!</string>
+	<string name="rename_ok">実行</string>
+	<string name="rename_cancel">キャンセル</string>
+	<string name="rename_input">リネーム</string>
+
+	<!-- Create Dialog -->
+	<string name="create_hint">Enter File Name!</string>
+	<string name="create_ok">実行</string>
+	<string name="create_cancel">キャンセル</string>
+	<string name="create_input">新規作成</string>
+	<string name="create_file">ファイル\n(HTML/CSS/JavaScript)</string>
+	<string name="create_image">画像</string>
+	<string name="create_folder">フォルダ</string>
+
+	<!-- Application List Dialog -->
+	<string name="application_list_exec">アプリケーション実行</string>
+	<string name="application_list_delete">削除</string>
+	<string name="application_list_delete_ok">削除してもよろしいですか？</string>
+	<string name="application_list_ok">実行</string>
+	<string name="application_list_cancel">キャンセル</string>
+
+	<!-- OK Dialog -->
+	<string name="error_dialog_title">エラー</string>
+	<string name="dialog_ok">OK</string>
+
+	<!-- ログイン Dialog -->
+	<string name="login_message">Live++のアカウント情報を入力してください。</string>
+	<string name="login_user_id">ユーザID</string>
+	<string name="login_password">パスワード</string>
+	<string name="login_ok">OK</string>
+	<string name="login_cancel">キャンセル</string>
+
+	<!-- addressBook Dialog -->
+	<string name="addressbook_get_ok">電話帳情報の取得を許可しますか？</string>
+	<string name="addressbook_yes">許可</string>
+	<string name="addressbook_no">許可しない</string>
+
+	<!-- コランダムエディタWebモード選択ダイアログ -->
+	<string name="editor_mode_title">表示モード選択</string>
+	<string name="editor_admin">管理者用モード</string>
+	<string name="editor_operation">オペレーションモード</string>
+	<string name="editor_full">フルスクリーンモード</string>
+
+	<!-- コランダムエディタプレビュー画面 -->
+	<string name="editor_preview_imageButton1_desc">リロードボタン</string>
+	<string name="editor_preview_imageButton2_desc">ホームボタン</string>
+	<string name="editor_preview_imageButton3_desc">Prevボタン</string>
+	<string name="editor_preview_imageButton4_desc">Nextボタン</string>
+	<string name="editor_preview_imageButton5_desc">リロードボタン</string>
+	<string name="editor_preview_imageButton6_desc">キャンセルボタン</string>
+	<string name="editor_preview_imageButton7_desc">メニューボタン</string>
+
+	<!-- MESSAGE -->
+	<string name="msg_exec_web_browser">WEBブラウザを起動します。</string>
+	<string name="msg_good_by">アプリケーションを終了します。</string>
+	<string name="msg_cancel">キャンセルします。</string>
+	<string name="msg_stop_loading">読み込みを中断しました。</string>
+	<string name="msg_save">設定を保存しました。</string>
+	<string name="msg_preview">プレビューを表示します。</string>
+	<string name="msg_save_pass_code">パスコードを保存しました。</string>
+	<string name="msg_create_shortcut">ショートカットを作成しました。</string>
+	<string name="msg_ticker">通知が届きました。</string>
+	<string name="msg_restart">アプリケーションが終了されました 再起動しますか？</string>
+	<string name="msg_deleted">削除しました。</string>
+	<string name="msg_download_cancel">ダウンロードをキャンセルします。</string>
+	<string name="msg_download_finish">ダウンロードが完了しました。</string>
+	<string name="msg_waiting">しばらくお待ちください</string>
+	<string name="msg_connecting">通信中・・・</string>
+	<string name="msg_full_screen">2本指でタッチしてメニュー表示ができます。</string>
+	<string name="msg_blank"></string>
+	<string name="msg_upload_success">アップロードしました。</string>
+
+	<!-- ERROR -->
+	<string name="err_no_sdcard">SDカードを挿入してください。</string>
+	<string name="err_exec_web_browser">WEBブラウザを利用できません。</string>
+	<string name="err_passcode">パスコードが不正です。</string>
+	<string name="err_cant_accsess">アクセスをブロックしました。</string>
+	<string name="err_api_format">コランダムAPIが不正です。</string>
+	<string name="err_no_hw_camera">カメラが認識されていません。</string>
+	<string name="err_no_hw_accelerometer">加速度センサーが認識されていません。</string>
+	<string name="err_no_intent_camera">カメラアプリケーションをインストールしてください。</string>
+	<string name="err_no_intent_garally">ギャラリーアプリケーションをインストールしてください。</string>
+	<string name="err_no_intent_pdf_reader">PDFリーダーアプリケーションをインストールしてください。</string>
+	<string name="err_cannot_delete_file">削除できません。</string>
+	<string name="err_cannot_edit_file">編集できません。</string>
+	<string name="err_cannot_rename_file">リネームできません。</string>
+	<string name="err_duplication_file_name">ファイル名が重複しています。</string>
+	<string name="err_cannot_move">移動できません。</string>
+	<string name="err_illegal_character">は使用不可能な文字です。</string>
+	<string name="err_no_intent">該当アプリケーションをインストールしてください。</string>
+	<string name="err_title">エラー</string>
+	<string name="err_exception">エラーが発生しました。</string>
+	<string name="err_invalid_url">不正なURLです。</string>
+	<string name="err_invalid_charset">不正な文字コードです。</string>
+	<string name="err_connection">サーバとの通信に失敗しました。\n再度アプリケーションを起動してください。</string>
+	<string name="err_io">サーバとの通信に失敗しました。\nネットワークの接続状態を確認してください。</string>
+	<string name="err_exception_continue">エラーが発生しましたが、処理を続行します。</string>
+	<string name="err_upload_failure">アップロード出来ませんでした。</string>
+	<string name="err_server">サーバとの通信に失敗しました。</string>
+	<string name="err_download_failure">ダウンロード出来ませんでした。</string>
+
+	<!-- ログ -->
+	<string name="log_err_write_file">ファイル出力に失敗しました。</string>
+	<string name="log_err_close_file">ファイルクローズに失敗しました。</string>
+	<string name="log_err_delete_file">ファイルの削除に失敗しました。</string>
+	<string name="log_err_make_dir">ディレクトリの作成に失敗しました。</string>
+	<string name="log_err_no_download_file">ダウンロードファイルが存在しません。</string>
+</resources>

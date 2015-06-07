@@ -1,0 +1,89 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#000000" >
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- オプションメニューボタン -->
+		<Button
+			android:id="@+id/application_list_Button2"
+			android:text="@string/application_list_Button2"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/application_list_textView2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+
+		<!-- コランダムアプリケーション管理 -->
+		<TextView
+			android:id="@+id/application_list_textView0"
+			android:text="@string/app_name"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/application_list_textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+
+		<Button
+			android:id="@+id/application_list_Button1"
+			android:text="@string/application_list_Button1"
+			style="@style/Corundum_Button_topbar" />
+	</LinearLayout>
+
+	<ListView
+		android:id="@+id/application_list_ListView1"
+		android:layout_width="fill_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:choiceMode="singleChoice"
+		android:scrollingCache="false" />
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<Button
+			android:id="@+id/application_list_Button3"
+			android:text="@string/application_list_Button3"
+			style="@style/Corundum_Button_bottombar"
+			android:layout_weight="1"
+			android:layout_width="0dp" />
+
+		<Button
+			android:id="@+id/application_list_Button4"
+			android:text="@string/application_list_Button4"
+			style="@style/Corundum_Button_bottombar"
+			android:layout_weight="1"
+			android:layout_width="0dp" />
+
+		<Button
+			android:id="@+id/application_list_Button5"
+			android:text="@string/application_list_Button5"
+			style="@style/Corundum_Button_bottombar"
+			android:layout_weight="1"
+			android:layout_width="0dp" />
+	</LinearLayout>
+</LinearLayout>

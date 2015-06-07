@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.1, maximum-scale=0.5, user-scalable=yes">
+		<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+		<script type="text/javascript">
+			google.load("feeds", "1");
+
+			function initialize() {
+				var feed = new google.feeds.Feed(document.myForm.myClick.value);
+				feed.load(function(result) {
+					if (!result.error) {
+						var container = document.getElementById("feed");
+						var html = "";
+						for (var i = 0; i < result.feed.entries.length; i++) {
+							html += "<li style=\"font-size: 20px;\">" + result.feed.entries[i].title;
+						}
+						container.innerHTML = html;
+					}
+				});
+			}
+
+		</script>
+	</head>
+	<body>
+		<table orign="center">
+			<tr align=center>
+				<td>
+					<form name="myForm" action="#">
+						<div>
+							<input type="text" style="font-size: 20px;" name="myClick" value="http://rss.dailynews.yahoo.co.jp/fc/rss.xml">
+							<input type="button" style="font-size: 40px;" value="Read" name="myFormButton" onclick="initialize()">
+						</div>
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div id="feed"></div>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

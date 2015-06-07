@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+
+	<!-- 上部URLバー表示 -->
+	<LinearLayout
+		android:id="@+id/home_LinearLayout1"
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- URL入力エディットボックス -->
+		<EditText
+			android:id="@+id/home_editText1"
+			android:layout_width="0dip"
+			android:layout_weight="6"
+			style="@style/Corundum_EditText_url" />
+
+		<!-- リロードボタン -->
+		 <ImageButton
+			android:id="@+id/home_imageButton1"
+			android:src="@drawable/reload"
+			android:contentDescription="@string/home_imageButton1_desc"
+			style="@style/Corundum_ImageButton_bar" />
+	</LinearLayout>
+
+	<!-- WEB表示 -->
+	<com.corundumPro.features.home.HomeWebView
+		android:id="@+id/home_webView1"
+		android:layout_width="fill_parent"
+		android:layout_height="0dip"
+		android:layout_weight="0.41" />
+
+	<!-- 下部メニューバー表示 -->
+	<LinearLayout
+		android:id="@+id/home_LinearLayout2"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- ホームボタン -->
+		<ImageButton
+			android:id="@+id/home_imageButton2"
+			android:src="@drawable/home"
+			android:contentDescription="@string/home_imageButton2_desc"
+			style="@style/Corundum_ImageButton_bar" />
+
+		<!-- Prevボタン -->
+		<ImageButton
+			android:id="@+id/home_imageButton3"
+			android:src="@drawable/prev"
+			android:contentDescription="@string/home_imageButton3_desc"
+			style="@style/Corundum_ImageButton_bar" />
+
+		<!-- Nextボタン -->
+		<ImageButton
+			android:id="@+id/home_imageButton4"
+			android:src="@drawable/next"
+			android:contentDescription="@string/home_imageButton4_desc"
+			style="@style/Corundum_ImageButton_bar" />
+
+		<!-- リロードボタン -->
+		<ImageButton
+			android:id="@+id/home_imageButton5"
+			android:src="@drawable/reload"
+			android:contentDescription="@string/home_imageButton5_desc"
+			style="@style/Corundum_ImageButton_bar" />
+
+		<!-- キャンセルボタン -->
+		<ImageButton
+			android:id="@+id/home_imageButton6"
+			android:src="@drawable/cancel"
+			android:contentDescription="@string/home_imageButton6_desc"
+			style="@style/Corundum_ImageButton_bar" />
+
+		<!-- プログレス -->
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_weight="1"
+			style="@style/Corundum_LinearLayout_Progress_Large" >
+
+			<ProgressBar
+				android:id="@+id/home_progressBar1"
+				style="@style/Corundum_ProgressBar_Large" />
+		</LinearLayout>
+
+		<!-- オプションメニューボタン -->
+		<ImageButton
+			android:id="@+id/home_imageButton7"
+			android:src="@drawable/menu"
+			android:contentDescription="@string/home_imageButton7_desc"
+			style="@style/Corundum_ImageButton_bar" />
+	</LinearLayout>
+</LinearLayout>

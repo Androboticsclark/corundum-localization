@@ -1,0 +1,251 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- メニューボタン -->
+		<Button
+			android:id="@+id/sub_setting_button3"
+			android:text="@string/menu_textView1"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- その他導入処理 -->
+		<TextView
+			android:id="@+id/menu_textView1"
+			android:text="@string/menu_button6"
+			android:gravity="center"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/sub_setting_textView17"
+			android:text="@string/menu_textView1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/sub_setting_ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#D2D8E1"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20.0dp" >
+
+				<!-- スクリーンセーバーの設定 -->
+				<TextView
+					android:id="@+id/sub_setting_textView1"
+					android:text="@string/sub_setting_textView1"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- スクリーンセーバーを使用 -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu_top" >
+
+					<TextView
+						android:id="@+id/sub_setting_textView2"
+						android:text="@string/sub_setting_textView2"
+						android:layout_weight="6"
+						android:layout_width="0dip"
+						style="@style/Corundum_TextView_Label" />
+
+					<CheckBox
+						android:id="@+id/sub_setting_checkBox1"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						style="@style/Corundum_CheckBox" />
+				</LinearLayout>
+
+				<!-- 秒数エディットボックス -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout" >
+
+					<EditText
+						android:id="@+id/sub_setting_editText1"
+						style="@style/Corundum_EditText_sec" />
+
+					<!-- 秒後に起動する -->
+					<TextView
+						android:id="@+id/sub_setting_textView3"
+						android:text="@string/sub_setting_textView3"
+						style="@style/Corundum_TextView_Label" />
+				</LinearLayout>
+
+				<!-- URLエディットボックス -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout" >
+
+					<EditText
+						android:id="@+id/sub_setting_editText2"
+						android:hint="@string/sub_setting_editText2_hint"
+						android:layout_width="match_parent"
+						style="@style/Corundum_EditText_url" />
+				</LinearLayout>
+
+				<!-- プレビュー表示確認 -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu_bottom" >
+
+					<TextView
+						android:id="@+id/sub_setting_textView4"
+						android:text="@string/sub_setting_textView4"
+						android:layout_weight="1"
+						style="@style/Corundum_TextView_Label" />
+
+					<!-- プレビューボタン -->
+					<Button
+						android:id="@+id/sub_setting_button1"
+						android:text="@string/sub_setting_button1"
+						android:layout_weight="1"
+						style="@style/Corundum_Button_Small" />
+				</LinearLayout>
+
+				<!-- スクリーンセーバーとして使用する -->
+				<TextView
+					android:id="@+id/sub_setting_textView5"
+					android:text="@string/sub_setting_textView5"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- URLを設定してください -->
+				<TextView
+					android:id="@+id/sub_setting_textView6"
+					android:text="@string/sub_setting_textView6"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20.0dp" >
+
+				<!-- パスコードの設定 -->
+				<TextView
+					android:id="@+id/sub_setting_textView7"
+					android:text="@string/sub_setting_textView7"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- パスコードを使用する -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu_top" >
+
+					<TextView
+						android:id="@+id/sub_setting_textView8"
+						android:text="@string/sub_setting_textView8"
+						android:layout_weight="6"
+						android:layout_width="0dip"
+						style="@style/Corundum_TextView_Label" />
+
+					<CheckBox
+						android:id="@+id/sub_setting_checkBox2"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						style="@style/Corundum_CheckBox" />
+				</LinearLayout>
+
+				<!-- パスコードの設定変更 -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu_bottom" >
+
+					<TextView
+						android:id="@+id/sub_setting_textView9"
+						android:text="@string/sub_setting_textView9"
+						android:layout_weight="1"
+						style="@style/Corundum_TextView_Label" />
+
+					<!-- コード入力 -->
+					<Button
+						android:id="@+id/sub_setting_button2"
+						android:text="@string/sub_setting_button2"
+						android:layout_weight="1"
+						style="@style/Corundum_Button_Small" />
+				</LinearLayout>
+
+				<!-- パスコードを設定してください -->
+				<TextView
+					android:id="@+id/sub_setting_textView10"
+					android:text="@string/sub_setting_textView10"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- 初期状態のパスコードは0000です -->
+				<TextView
+					android:id="@+id/sub_setting_textView11"
+					android:text="@string/sub_setting_textView11"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- 管理者モードはパスコード使用しません -->
+				<TextView
+					android:id="@+id/sub_setting_textView12"
+					android:text="@string/sub_setting_textView12"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="20.0dp" >
+
+				<!-- ホームボタン終了抑止 -->
+				<TextView
+					android:id="@+id/sub_setting_textView13"
+					android:text="@string/sub_setting_textView13"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- 終了時に通知する -->
+				<LinearLayout
+					style="@style/Corundum_LinearLayout_menu" >
+
+					<TextView
+						android:id="@+id/sub_setting_textView14"
+						android:text="@string/sub_setting_textView14"
+						android:layout_weight="6"
+						android:layout_width="0dip"
+						style="@style/Corundum_TextView_Label" />
+
+					<CheckBox
+						android:id="@+id/sub_setting_checkBox3"
+						android:layout_weight="1"
+						android:layout_width="0dip"
+						style="@style/Corundum_CheckBox" />
+				</LinearLayout>
+
+				<!-- ホームボタンで終了した時に -->
+				<TextView
+					android:id="@+id/sub_setting_textView15"
+					android:text="@string/sub_setting_textView15"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- 終了確認のメッセージを表示します -->
+				<TextView
+					android:id="@+id/sub_setting_textView16"
+					android:text="@string/sub_setting_textView16"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

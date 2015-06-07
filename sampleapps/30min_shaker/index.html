@@ -1,0 +1,108 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5,minimum-scale=0.1, maximum-scale=0.5, user-scalable=yes">
+	
+	<script src="plugins/plugin-loader.js"></script>
+	<link rel="stylesheet" href="plugins/plugin-loader.css">
+
+	<style>
+		input {
+			font-size: 100%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: right;
+		}
+	</style>
+
+	<script>
+		window.onload = function(){
+			corundum = new Corundum();
+		};
+		
+		myButton = 0;
+		shakeCount = 0;
+		function myWatch(flug){
+			if (myButton==0){ 
+				Start=new Date();
+				myButton = 1;
+				document.myForm.myFormButton.value = "Shake!!";
+				shakeCount = 0;
+				document.getElementById("a").innerHTML=shakeCount;
+				document.myForm.myFormButton.disabled = true;
+				myInterval=setInterval("myWatch(1)",1);
+				document.location = "corundum-api://motionEvent({\"value\":\"shake\"})";
+				document.getElementById("image").innerHTML="<img src=\"./img/milk.png\">";
+			} else { 
+				Stop=new Date();
+				T = Stop.getTime() - Start.getTime();
+				H = Math.floor(T/(60*60*1000));
+				T = T-(H*60*60*1000);
+				M = Math.floor(T/(60*1000));
+				T = T-(M*60*1000);
+				S = Math.floor(T/1000); 
+				Ms = T%1000; 
+				document.myForm.myClick.value = S+":"+Ms;
+
+				if (S == 30) {
+					myButton = 0;
+					document.myForm.myClick.value = "30:00";
+					clearInterval( myInterval );
+					document.myForm.myFormButton.disabled = false;
+					document.myForm.myFormButton.value = "Start";
+					document.location = "corundum-api://motionEvent({\"value\":\"unShake\"})";
+				}
+			}
+		}
+
+		function Corundum() {
+			//端末がシェィクされた
+			this.motionShaked = function(value){
+				shakeCount += 1;
+				document.getElementById("a").innerHTML=shakeCount;
+				
+				if (shakeCount < 5) {
+					document.getElementById("image").innerHTML="<img src=\"./img/milk.png\">";
+				} else if (shakeCount < 10) {
+					document.getElementById("image").innerHTML="<img src=\"./img/butter.png\">";
+				} else if (shakeCount < 15) {
+					document.getElementById("image").innerHTML="<img src=\"./img/yogurt.png\">";
+				} else if (shakeCount < 20) {
+					document.getElementById("image").innerHTML="<img src=\"./img/cheese.png\">";
+				} else if (shakeCount < 25) {
+					document.getElementById("image").innerHTML="<img src=\"./img/ice_cream.png\">";
+				}
+			};
+		};
+	</script>
+</head>
+<body>
+	<table orign="center">
+		<tr align=center>
+			<td>
+				<form name="myForm" action="#">
+					<div>
+						<input type="text" style="font-size: 50px;" name="myClick">
+						<input type="button" style="font-size: 100px;" value="Start" name="myFormButton" onclick="myWatch(0)">
+					</div>
+				</form>
+			</td>
+		</tr>
+		<tr align=center>
+			<td>
+				<div id="a" style="font-size: 100px;">0</div>
+			</td>
+			<td>
+				<p style="font-size: 100px;">回</p>
+			</td>
+		</tr>
+		<tr align=center>
+			<td>
+				<div id="image"><img src="./img/milk.png"></div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

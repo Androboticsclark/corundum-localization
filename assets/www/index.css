@@ -1,0 +1,12 @@
+/* HTML版コランダムホーム用 */
+BODY {
+/*    background-color: white; */
+    background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(0.3, #232323), color-stop(0.5, darkslategray), color-stop(0.7, #232323), to(black));
+    color: lightgray
+} 
+
+/* JQueryMobile版コランダムホーム用 */
+.ui-body-n {
+    background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(0.3, #232323), color-stop(0.5, darkslategray), color-stop(0.7, #232323), to(black));
+    color: lightgray
+}

@@ -1,0 +1,165 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:gravity="center"
+		style="@style/Corundum_LinearLayout_bar" >
+
+		<!-- Topボタン -->
+		<Button
+			android:id="@+id/menu_button10"
+			android:text="@string/menu_button10"
+			style="@style/Corundum_Button_topbar" />
+
+		<!-- メニュー -->
+		<TextView
+			android:id="@+id/menu_textView1"
+			android:text="@string/menu_textView1"
+			android:gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textColor="#FFFFFF"
+			android:textSize="13sp"
+			android:layout_weight="1"
+			android:padding="5.0sp"
+			android:textStyle="bold" />
+
+		<!-- パディング -->
+		<TextView
+			android:id="@+id/menu_textView9"
+			android:text="@string/menu_button10"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingRight="10dp"
+			android:textColor="#00000000" />
+	</LinearLayout>
+
+	<ScrollView
+		android:id="@+id/menu_ScrollView01"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="#D2D8E1"
+		android:orientation="vertical" >
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15.0dp" >
+
+				<!-- コランダムとは？(PDF) -->
+				<Button
+					android:id="@+id/menu_button1"
+					android:text="@string/menu_button1"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- 最初にお読みください -->
+				<TextView
+					android:id="@+id/menu_textView2"
+					android:text="@string/menu_textView2"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15.0dp" >
+
+				<!-- 環境設定 -->
+				<TextView
+					android:id="@+id/menu_textVie6"
+					android:text="@string/menu_textView6"
+					style="@style/Corundum_TextView_Title" />
+
+				<!-- 導入処理 -->
+				<Button
+					android:id="@+id/menu_button5"
+					android:text="@string/menu_button5"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- その他導入処理 -->
+				<Button
+					android:id="@+id/menu_button6"
+					android:text="@string/menu_button6"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- ホワイトリスト設定 -->
+				<Button
+					android:id="@+id/menu_button7"
+					android:text="@string/menu_button7"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- 起動アイコン設定 -->
+				<Button
+					android:id="@+id/menu_button8"
+					android:text="@string/menu_button8"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- コランダムホーム編集 -->
+				<Button
+					android:id="@+id/menu_button9"
+					android:text="@string/menu_button9"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- Webを表示する前に -->
+				<TextView
+					android:id="@+id/menu_textView7"
+					android:text="@string/menu_textView7"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- 各種環境設定を実施してください -->
+				<TextView
+					android:id="@+id/menu_textView8"
+					android:text="@string/menu_textView8"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="15.0dp" >
+
+				<!-- 管理者用モード -->
+				<Button
+					android:id="@+id/menu_button2"
+					android:text="@string/menu_button2"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- オペレーションモード -->
+				<Button
+					android:id="@+id/menu_button3"
+					android:text="@string/menu_button3"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- フルスクリーンモード -->
+				<Button
+					android:id="@+id/menu_button4"
+					android:text="@string/menu_button4"
+					style="@style/Corundum_Button_Large" />
+
+				<!-- 対象となる表示モードで、 -->
+				<TextView
+					android:id="@+id/menu_textView3"
+					android:text="@string/menu_textView4"
+					style="@style/Corundum_TextView_Description" />
+
+				<!-- Webの表示確認をして下さい -->
+				<TextView
+					android:id="@+id/menu_textView4"
+					android:text="@string/menu_textView5"
+					style="@style/Corundum_TextView_Description" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

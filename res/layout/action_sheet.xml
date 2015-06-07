@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="#66000000"
+	android:gravity="bottom" >
+
+    <!-- ツールバー表示/非表示 -->
+	<LinearLayout
+		style="@style/Corundum_LinearLayout_action_sheet" >
+
+		<Button
+			android:id="@+id/action_sheet_button1"
+			android:text="@string/action_sheet_button1"
+			style="@style/Corundum_Button_action_sheet"
+			android:layout_width="350dp" />
+	</LinearLayout>
+
+	<!-- WEBブラウザ起動 -->
+	<LinearLayout
+		style="@style/Corundum_LinearLayout_action_sheet" >
+
+		<Button
+			android:id="@+id/action_sheet_button2"
+			android:text="@string/action_sheet_button2"
+			style="@style/Corundum_Button_action_sheet"
+			android:layout_width="350dp" />
+	</LinearLayout>
+
+	<!-- このアプリを強制終了 -->
+	<LinearLayout
+		style="@style/Corundum_LinearLayout_action_sheet" >
+
+	    <Button
+			android:id="@+id/action_sheet_button3"
+			android:text="@string/action_sheet_button3"
+			style="@style/Corundum_Button_action_sheet"
+			android:layout_width="350dp" />
+	</LinearLayout>
+
+	<!-- 環境設定メニューへ -->
+	<LinearLayout
+		style="@style/Corundum_LinearLayout_action_sheet" >
+
+		<Button
+			android:id="@+id/action_sheet_button4"
+			android:text="@string/action_sheet_button4"
+			style="@style/Corundum_Button_action_sheet"
+			android:layout_width="350dp" />
+	</LinearLayout>
+
+	<!-- キャンセル -->
+	<LinearLayout
+		style="@style/Corundum_LinearLayout_action_sheet" >
+
+	    <Button
+			android:id="@+id/action_sheet_button5"
+			android:text="@string/action_sheet_button5"
+			style="@style/Corundum_Button_action_sheet_cancel"
+			android:layout_width="350dp" />
+	</LinearLayout>
+</LinearLayout>
